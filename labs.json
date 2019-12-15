@@ -1,0 +1,16 @@
+{
+	"labs": [
+		{
+		"name": "AG Photo Lab",
+		"website": "https://www.ag-photolab.co.uk/",
+		"city": "Birmingham",
+		"country": "UK"
+		},
+		{
+		"name": "Palm",
+		"website": "palm.com",
+		"city": "bham",
+		"country": "uk"
+		}
+	]
+}
