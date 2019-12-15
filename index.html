@@ -13,11 +13,11 @@
     xmlhttp.open("GET", 'labs.yml', false);
     xmlhttp.send();
     if (xmlhttp.status==200) {
-      result = xmlhttp.responseText;
+      result = jsyaml.safeLoad(xmlhttp.responseText);
     }
     
     $('#labs').DataTable( {
-      data:  jsyaml.safeLoad(result),
+      data:  result,
       columns: [
         { data: 'name' },
         { data: 'website' },
