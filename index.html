@@ -8,8 +8,16 @@
 
 <script type="text/javascript">
   $(document).ready( function () {
+    var result = null;
+    var xmlhttp = new XMLHttpRequest();
+    xmlhttp.open("GET", 'labs.yml', false);
+    xmlhttp.send();
+    if (xmlhttp.status==200) {
+      result = xmlhttp.responseText;
+    }
+    
     $('#labs').DataTable( {
-      data:  jsyaml.safeLoad('labs.yml'),
+      data:  jsyaml.safeLoad(result),
       columns: [
         { data: 'name' },
         { data: 'website' },
