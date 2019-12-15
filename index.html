@@ -12,7 +12,7 @@
     $('#example').dataTable( {
       "ajax": {
         "url": "labs.yml",
-        "dataSrc": function (json) {jsyaml.safeLoad(json);}
+        "dataSrc": function (json) {jsyaml.safeLoad(json.data);}
       }
     } );
   } );
