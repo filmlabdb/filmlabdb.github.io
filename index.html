@@ -7,9 +7,9 @@
 <script src="https://requirejs.org/docs/release/2.3.5/minified/require.js"></script>
 
 <script type="text/javascript">
-  $(document).ready( require(['fs'], function () {
+  $(document).ready( function () {
     $('#labs').DataTable( {
-      data:  jsyaml.safeLoad(fs.readFileSync('labs.yml', 'utf8')),
+      data:  jsyaml.safeLoad('labs.yml')),
       columns: [
         { data: 'name' },
         { data: 'website' },
