@@ -10,9 +10,9 @@
 <script type="text/javascript">
   $(document).ready( function () {
     $('#example').dataTable( {
-      "ajax": {
-        "url": "labs.yml",
-        "dataSrc": function (json) {jsyaml.safeLoad(json.data);}
+      ajax: {
+        url: 'labs.yml',
+        dataSrc: function (json) {return jsyaml.safeLoad(json.data);}
       }
     } );
   } );
