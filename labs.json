@@ -223,6 +223,39 @@
 			"postal": 	true,
 			"instore": 	false,
 			"notes": 	null
+		},
+		{
+			"name": 	"Photo Express",
+			"website": 	"https://photo-express.co.uk/",
+			"city": 	"Hull",
+			"country": 	"UK",
+			"process35": 	true,
+			"process120": 	false,
+			"processlf": 	false,
+			"processc41": 	true,
+			"processbw": 	false,
+			"processe6": 	false,
+			"scanning": 	true,
+			"postal": 	true,
+			"instore": 	true,
+			"notes": 	null
+		},
+		{
+			"name": 	"SilverPan Film Lab",
+			"website": 	"https://silverpan.co.uk/",
+			"city": 	"Bristol",
+			"country": 	"UK",
+			"process35": 	true,
+			"process120": 	true,
+			"processlf": 	false,
+			"processc41": 	true,
+			"processbw": 	true,
+			"processe6": 	true,
+			"processecn2": 	true,
+			"scanning": 	true,
+			"postal": 	true,
+			"instore": 	true,
+			"notes": 	null
 		}
 	]
 }
