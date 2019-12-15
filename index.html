@@ -1,35 +1,54 @@
+<!DOCTYPE html>
+<html>
 <head>
 <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.20/css/jquery.dataTables.css">
-<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/esprima/2.7.3/esprima.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/js-yaml/3.13.1/js-yaml.min.js"></script>
+
+<script type="text/javascript">
+	$(document).ready( function () {
+		$('#labs').DataTable( {
+			ajax: {
+				url: 'labs.json',
+				dataSrc: "labs",
+			},
+			columns: [
+				{ data: 'name' },
+				{ data: 'website' },
+				{ data: 'city' },
+				{ data: 'country' },
+				{ data: 'process35' },
+				{ data: 'process120' },
+				{ data: 'processlf' },
+				{ data: 'processc41' },
+				{ data: 'processbw' },
+				{ data: 'processe6' },
+				{ data: 'scanning' },
+				{ data: 'notes' }
+			]
+		} );
+	} );
+</script>
 </head>
 
 <body>
-<table id="example" class="display">
+<table id="labs" class="display">
 	<thead>
 		<th>Name</th>
 		<th>Website</th>
 		<th>City</th>
 		<th>Country</th>
+		<th>Process 135?</th>
+		<th>Process 120?</th>
+		<th>Process LF?</th>
+		<th>Process C-41?</th>
+		<th>Process B&W?</th>
+		<th>Process E-6?</th>
+		<th>Scanning?</th>
+		<th>Notes</th>
 	</thead>
 </table>
-
-<script type="text/javascript">
-  $(document).ready( function () {
-    $('#example').DataTable( {
-      ajax: {
-        url: 'labs.json',
-	dataSrc: "labs",
-      },
-	columns: [
-	{ data: 'name' },
-	{ data: 'website' },
-	{ data: 'city' },
-	{ data: 'country' }
-	]
-    } );
-  } );
-</script>
 </body>
+</html>
