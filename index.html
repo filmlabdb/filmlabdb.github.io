@@ -7,11 +7,9 @@
 
 <script type="text/javascript">
   $(document).ready( function () {
-    const yaml = require('js-yaml');
-    const fs   = require('fs');
     
     $('#labs').DataTable( {
-      data:  yaml.safeLoad(fs.readFileSync('labs.yml', 'utf8')),
+      data:  jsyaml.safeLoad(fs.readFileSync('labs.yml', 'utf8')),
       columns: [
         { data: 'name' },
         { data: 'website' },
