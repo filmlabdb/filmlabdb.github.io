@@ -4,26 +4,14 @@
 <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/esprima/2.7.3/esprima.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/js-yaml/3.13.1/js-yaml.min.js"></script>
-<script src="https://requirejs.org/docs/release/2.3.5/minified/require.js"></script>
 
 <script type="text/javascript">
   $(document).ready( function () {
-    var result = null;
-    var xmlhttp = new XMLHttpRequest();
-    xmlhttp.open("GET", 'labs.yml', false);
-    xmlhttp.send();
-    if (xmlhttp.status==200) {
-      result = jsyaml.safeLoad(xmlhttp.responseText);
-    }
-    
-    $('#labs').DataTable( {
-      data:  result,
-      columns: [
-        { data: 'name' },
-        { data: 'website' },
-        { data: 'country' },
-        { data: 'city' }
-      ]
+    $('#example').dataTable( {
+      "ajax": {
+        "url": "labs.yml",
+        "dataSrc": jsyaml.safeLoad(json)
+      }
     } );
   } );
 </script>
