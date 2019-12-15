@@ -1,3 +1,11 @@
+function emoj (data, type, row) {
+	if (data == true) {
+		return '✔️';
+	} else if (data == false) {
+		return '❌';
+	}
+}
+
 $(document).ready( function () {
 	$('#labs').DataTable( {
 		ajax: {
@@ -9,15 +17,24 @@ $(document).ready( function () {
 			{ data: 'website' },
 			{ data: 'city' },
 			{ data: 'country' },
-			{ data: 'process35' },
-			{ data: 'process120' },
-			{ data: 'processlf' },
-			{ data: 'processc41' },
-			{ data: 'processbw' },
-			{ data: 'processe6' },
-			{ data: 'scanning' },
-			{ data: 'postal' },
-			{ data: 'instore'},
+			{ data: 'process35',
+			  render: emoj },
+			{ data: 'process120',
+			  render: emoj },
+			{ data: 'processlf',
+			  render: emoj },
+			{ data: 'processc41',
+			  render: emoj },
+			{ data: 'processbw',
+			  render: emoj },
+			{ data: 'processe6',
+			  render: emoj },
+			{ data: 'scanning',
+			  render: emoj },
+			{ data: 'postal',
+			  render: emoj },
+			{ data: 'instore',
+			  render: emoj },
 			{ data: 'notes' }
 		]
 	} );
