@@ -12,6 +12,8 @@
       "processbw": true,
       "processe6": true,
       "scanning": true,
+      "postal": true,
+      "instore": true,
       "notes": ""
     },
     {
@@ -26,6 +28,8 @@
       "processbw": true,
       "processe6": true,
       "scanning": true,
+      "postal": true,
+      "instore": true,
       "notes": ""
     }
   ]
