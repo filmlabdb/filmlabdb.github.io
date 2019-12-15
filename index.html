@@ -7,8 +7,7 @@
 <script src="https://requirejs.org/docs/release/2.3.5/minified/require.js"></script>
 
 <script type="text/javascript">
-  $(document).ready( function () {
-    const fs = require('fs');
+  $(document).ready( require(['fs'], function () {
     $('#labs').DataTable( {
       data:  jsyaml.safeLoad(fs.readFileSync('labs.yml', 'utf8')),
       columns: [
@@ -18,5 +17,5 @@
         { data: 'city' }
       ]
     } );
-  } );
+  } ));
 </script>
