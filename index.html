@@ -4,15 +4,11 @@
 <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.js"></script>
 <script src="esprima.js"></script>
 <script src="js-yaml.min.js"></script>
-<script type="text/javascript">
-</script>
-
 
 <script type="text/javascript">
   $(document).ready( function () {
-    const labs = yaml.safeLoad(fs.readFileSync('labs.yml', 'utf8'));
     $('#labs').DataTable( {
-      data: labs,
+      data:  yaml.safeLoad(fs.readFileSync('labs.yml', 'utf8')),
       columns: [
         { data: 'name' },
         { data: 'website' },
