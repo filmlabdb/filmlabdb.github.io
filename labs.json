@@ -14,7 +14,7 @@
 			"scanning": 	true,
 			"postal": 	true,
 			"instore": 	true,
-			"notes": 	""
+			"notes": 	null
 		},
 		{
 			"name": 	"Palm Labs",
@@ -30,7 +30,7 @@
 			"scanning": 	true,
 			"postal": 	true,
 			"instore": 	true,
-			"notes": 	""
+			"notes": 	null
 		},
 		{
 			"name": 	"Aperture",
@@ -46,11 +46,11 @@
 			"scanning": 	true,
 			"postal": 	true,
 			"instore": 	true,
-			"notes": 	""
+			"notes": 	null
 		},
 		{
 			"name": 	"Bayeux",
-			"website": 	"https://bayeux.co.uk",
+			"website": 	"https://bayeux.co.uk/",
 			"city": 	"London",
 			"country": 	"UK",
 			"process35": 	true,
@@ -62,11 +62,11 @@
 			"scanning": 	true,
 			"postal": 	null,
 			"instore": 	true,
-			"notes": 	""
+			"notes": 	null
 		},
 		{
 			"name": 	"Bristol Cameras",
-			"website": 	"https://bristolcameras.co.uk",
+			"website": 	"https://bristolcameras.co.uk/",
 			"city": 	"Bristol",
 			"country": 	"UK",
 			"process35": 	true,
@@ -78,11 +78,11 @@
 			"scanning": 	true,
 			"postal": 	true,
 			"instore": 	null,
-			"notes": 	""
+			"notes": 	null
 		},
 		{
 			"name": 	"Digitalab",
-			"website": 	"https://digitalab.co.uk",
+			"website": 	"https://digitalab.co.uk/",
 			"city": 	"Newcastle-upon-Tyne",
 			"country": 	"UK",
 			"process35": 	true,
@@ -94,11 +94,11 @@
 			"scanning": 	true,
 			"postal": 	true,
 			"instore": 	null,
-			"notes": 	""
+			"notes": 	null
 		},
 		{
 			"name": 	"DSCL",
-			"website": 	"https://dscolourlabs.co.uk",
+			"website": 	"https://dscolourlabs.co.uk/",
 			"city": 	"Manchester",
 			"country": 	"UK",
 			"process35": 	true,
@@ -110,11 +110,11 @@
 			"scanning": 	true,
 			"postal": 	true,
 			"instore": 	null,
-			"notes": 	""
+			"notes": 	null
 		},
 		{
 			"name": 	"Filmdev",
-			"website": 	"https://filmdev.co.uk",
+			"website": 	"https://filmdev.co.uk/",
 			"city": 	"Stockton-on-Tees",
 			"country": 	"UK",
 			"process35": 	true,
@@ -126,11 +126,11 @@
 			"scanning": 	true,
 			"postal": 	true,
 			"instore": 	false,
-			"notes": 	""
+			"notes": 	null
 		},
 		{
 			"name": 	"Harrison Cameras",
-			"website": 	"https://harrisoncameras.co.uk",
+			"website": 	"https://harrisoncameras.co.uk/",
 			"city": 	"Sheffield",
 			"country": 	"UK",
 			"process35": 	true,
@@ -142,11 +142,11 @@
 			"scanning": 	true,
 			"postal": 	true,
 			"instore": 	true,
-			"notes": 	""
+			"notes": 	null
 		},
 		{
 			"name": 	"Harman Lab",
-			"website": 	"https://harmanlab.co.uk",
+			"website": 	"https://harmanlab.co.uk/",
 			"city": 	"Mobberley",
 			"country": 	"UK",
 			"process35": 	true,
@@ -158,7 +158,7 @@
 			"scanning": 	true,
 			"postal": 	true,
 			"instore": 	false,
-			"notes": 	""
+			"notes": 	null
 		}
 	]
 }
