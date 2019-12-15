@@ -2,10 +2,23 @@
 
 <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.js"></script>
+<script src="esprima.js"></script>
+<script src="js-yaml.min.js"></script>
+<script type="text/javascript">
+</script>
+
 
 <script type="text/javascript">
   $(document).ready( function () {
-      $("#includedContent").load("labs.html"); 
-      $('#labs').DataTable();
-} );
+    const labs = yaml.safeLoad(fs.readFileSync('labs.yml', 'utf8'));
+    $('#labs').DataTable( {
+      data: labs,
+      columns: [
+        { data: 'name' },
+        { data: 'website' },
+        { data: 'country' },
+        { data: 'city' }
+      ]
+    } );
+  } );
 </script>
