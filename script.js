@@ -25,6 +25,7 @@ $(document).ready( function () {
 			{ data: 'city' },
 			{ data: 'country' },
 			{ data: 'process35',
+			  render: emoj,
 			  className: 'dt-body-center' },
 			{ data: 'process120',
 			  render: emoj,
