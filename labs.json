@@ -60,7 +60,7 @@
 			"processbw": 	true,
 			"processe6": 	true,
 			"scanning": 	true,
-			"postal": 	null,
+			"postal": 	true,
 			"instore": 	true,
 			"notes": 	null
 		},
