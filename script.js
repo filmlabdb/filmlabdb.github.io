@@ -8,6 +8,10 @@ function emoj (data, type, row) {
 	}
 }
 
+function  link (data, type, row) {
+	return "<a href='" + row.website + "'>" + row.name + "</a>"
+}
+
 $(document).ready( function () {
 	$('#labs').DataTable( {
 		ajax: {
@@ -15,8 +19,8 @@ $(document).ready( function () {
 			dataSrc: "labs",
 		},
 		columns: [
-			{ data: 'name' },
-			{ data: 'website' },
+			{ data: 'name',
+			  render: link },
 			{ data: 'city' },
 			{ data: 'country' },
 			{ data: 'process35',
