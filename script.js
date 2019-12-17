@@ -8,12 +8,13 @@ function emoj (data, type, row) {
 	}
 }
 
-function  link (data, type, row) {
+function link (data, type, row) {
 	return "<a href='" + row.website + "'>" + row.name + "</a>"
 }
 
 $(document).ready( function () {
 	$('#labs').DataTable( {
+		keepConditions: true,
 		ajax: {
 			url: 'labs.json',
 			dataSrc: "labs",
@@ -52,5 +53,5 @@ $(document).ready( function () {
 			  className: 'dt-body-center' },
 			{ data: 'notes' }
 		]
-	} );
-} );
+	});
+});
