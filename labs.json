@@ -317,12 +317,12 @@
 			"process120": 	true,
 			"processlf": 	false,
 			"processc41": 	true,
-			"processbw": 	null,
-			"processe6": 	null,
+			"processbw": 	false,
+			"processe6": 	false,
 			"processecn2": 	false,
 			"scanning": 	true,
 			"postal": 	true,
-			"instore": 	null,
+			"instore": 	false,
 			"notes": 	null
 		},
 		{
