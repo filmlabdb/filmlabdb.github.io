@@ -3,6 +3,8 @@ function emoj (data, type, row) {
 		return '✔️';
 	} else if (data == false) {
 		return '❌';
+	} else if (data == null) {
+		return '🤷';
 	}
 }
 
