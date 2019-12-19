@@ -28,14 +28,32 @@
 				"ecn2": false,
 				"scan": "flextight"
 			},
-			"5x7":  	false,
-			"8x10": 	false,
+			"5x7": {
+				"c41": 	false,
+				"b&w": 	false,
+				"e6": 	false,
+				"ecn2": false,
+				"scan": false
+			},
+			"8x10": {
+				"c41": 	false,
+				"b&w": 	false,
+				"e6": 	false,
+				"ecn2": false,
+				"scan": false
+			},
 			"110": {
 				"c41": 	true,
+				"b&w": 	false,
+				"e6": 	false,
+				"ecn2": false,
 				"scan": true
 			},
 			"126": {
 				"c41": 	true,
+				"b&w": 	false,
+				"e6": 	false,
+				"ecn2": false,
 				"scan": true
 			},
 			"127": {
@@ -47,6 +65,9 @@
 			},
 			"aps": {
 				"c41": 	true,
+				"b&w": 	false,
+				"e6": 	false,
+				"ecn2": false,
 				"scan": true
 			},
 			"postal": 	true,
