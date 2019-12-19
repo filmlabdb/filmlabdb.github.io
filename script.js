@@ -12,6 +12,11 @@ function link (data, type, row) {
 	return "<a href='" + row.website + "'>" + row.name + "</a>"
 }
 
+function scan (data, type, row) {
+	ret = data.map(x => x[0].toUpperCase() + x.slice(1)).join("<br/>")
+	return ret
+}
+
 $(document).ready( function () {
 	$('#labs').DataTable( {
 		keepConditions: true,
@@ -36,7 +41,8 @@ $(document).ready( function () {
 			{ data: '135.ecn2',
 			  render: emoj,
 			  className: 'dt-body-center' },
-			{ data: '135.scan' },
+			{ data: '135.scan',
+			  render: scan },
 			{ data: '120.c41',
 			  render: emoj,
 			  className: 'dt-body-center' },
@@ -46,7 +52,8 @@ $(document).ready( function () {
 			{ data: '120.e6',
 			  render: emoj,
 			  className: 'dt-body-center' },
-			{ data: '120.scan' },
+			{ data: '120.scan',
+			  render: scan },
 			{ data: 'postal',
 			  render: emoj,
 			  className: 'dt-body-center' },
