@@ -9,12 +9,21 @@ function emoj (data, type, row) {
 }
 
 function link (data, type, row) {
-	return "<a href='" + row.website + "'>" + row.name + "</a>"
+	return "<a href='" + row.website + "'>" + row.name + "</a>";
 }
 
 function scan (data, type, row) {
-	ret = data.map(x => x[0].toUpperCase() + x.slice(1)).join("<br/>")
-	return ret
+	if (Array.isArray(data)) {
+		return data.map(x => x[0].toUpperCase() + x.slice(1)).join("<br/>");
+	} else if (typeof data === 'string') {
+		return data[0].toUpperCase() + data.slice(1);
+	} else if (typeof data === 'boolean') {
+		if (data) {
+			return "Yes - Unknown";
+		} else {
+		return '❌';
+		}
+	}
 }
 
 $(document).ready( function () {
