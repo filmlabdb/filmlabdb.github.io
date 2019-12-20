@@ -73,6 +73,80 @@
 			"postal": 	true,
 			"instore": 	true,
 			"notes": 	null
+		},
+		{
+			"name": 	"Palm Labs",
+			"website": 	"https://www.palmlabs.co.uk/",
+			"location": {
+				"city": 	"Birmingham",
+				"country": 	"UK"
+			},
+			"135": {
+				"c41": 	true,
+				"b&w": 	true,
+				"e6": 	true,
+				"ecn2": false,
+				"scan": ["minilab", "flextight"]
+			},
+			"120": {
+				"c41": 	true,
+				"b&w": 	true,
+				"e6": 	true,
+				"ecn2": false,
+				"scan": ["minilab", "flextight"]
+			},
+			"4x5": {
+				"c41": 	true,
+				"b&w": 	true,
+				"e6": 	true,
+				"ecn2": false,
+				"scan": "flextight"
+			},
+			"5x7": {
+				"c41": 	false,
+				"b&w": 	false,
+				"e6": 	false,
+				"ecn2": false,
+				"scan": false
+			},
+			"8x10": {
+				"c41": 	true,
+				"b&w": 	true,
+				"e6": 	true,
+				"ecn2": false,
+				"scan": false
+			},
+			"110": {
+				"c41": 	false,
+				"b&w": 	false,
+				"e6": 	false,
+				"ecn2": false,
+				"scan": false
+			},
+			"126": {
+				"c41": 	false,
+				"b&w": 	false,
+				"e6": 	false,
+				"ecn2": false,
+				"scan": false
+			},
+			"127": {
+				"c41": 	false,
+				"b&w": 	false,
+				"e6": 	false,
+				"ecn2": false,
+				"scan": false
+			},
+			"aps": {
+				"c41": 	false,
+				"b&w": 	false,
+				"e6": 	false,
+				"ecn2": false,
+				"scan": false
+			},
+			"postal": 	true,
+			"instore": 	true,
+			"notes": 	null
 		}
 	]
 }
