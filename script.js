@@ -21,7 +21,7 @@ function scan (data, type, row) {
 		if (data) {
 			return "Yes - Unknown";
 		} else {
-		return '❌';
+		return '<center>❌</center>';
 		}
 	}
 }
