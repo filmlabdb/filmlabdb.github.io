@@ -27,7 +27,7 @@ function scan (data, type, row) {
 }
 
 $(document).ready( function () {
-	$('#labs').DataTable( {
+	var table = $('#labs').DataTable( {
 		keepConditions: true,
 		ajax: {
 			url: 'labs.json',
@@ -71,5 +71,13 @@ $(document).ready( function () {
 			  className: 'dt-body-center' },
 			{ data: 'notes' }
 		]
+	});
+
+	$('a.toggle-vis').on('click', function(e) {
+		e.preventDefault();
+		var cols = $(this).attr('data-column').split(", ").map(x =>
+			table.column(x));
+
+		cols.map(x => x.visible(!x.visible()));
 	});
 });
