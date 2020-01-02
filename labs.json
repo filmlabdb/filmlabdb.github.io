@@ -70,30 +70,6 @@
 				"ecn2": false,
 				"scan": true
 			},
-			"8mm": {
-				"c41": 	false,
-				"b&w": 	false,
-				"e6": 	false,
-				"ecn2": false,
-				"b&wr": false,
-				"scan": false
-			},
-			"super8": {
-				"c41": 	false,
-				"b&w": 	false,
-				"e6": 	false,
-				"ecn2": false,
-				"b&wr": false,
-				"scan": false
-			},
-			"16mm": {
-				"c41": 	false,
-				"b&w": 	false,
-				"e6": 	false,
-				"ecn2": false,
-				"b&wr": false,
-				"scan": false
-			},
 			"postal": 	true,
 			"instore": 	true,
 			"notes": 	null
@@ -166,30 +142,6 @@
 				"b&w": 	false,
 				"e6": 	false,
 				"ecn2": false,
-				"scan": false
-			},
-			"8mm": {
-				"c41": 	false,
-				"b&w": 	false,
-				"e6": 	false,
-				"ecn2": false,
-				"b&wr": false,
-				"scan": false
-			},
-			"super8": {
-				"c41": 	false,
-				"b&w": 	false,
-				"e6": 	false,
-				"ecn2": false,
-				"b&wr": false,
-				"scan": false
-			},
-			"16mm": {
-				"c41": 	false,
-				"b&w": 	false,
-				"e6": 	false,
-				"ecn2": false,
-				"b&wr": false,
 				"scan": false
 			},
 			"postal": 	true,
