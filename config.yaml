@@ -1,0 +1,4 @@
+baseURL: "http://sams96.github.io/filmlabdb"
+languageCode: "en-gb"
+title: "FilmlabDB"
+theme: filmlabdb-theme

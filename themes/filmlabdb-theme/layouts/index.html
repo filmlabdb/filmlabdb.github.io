@@ -1,0 +1,8 @@
+{{ define "main" }}
+
+	{{ $pages := where site.RegularPages "Type" "in" site.Params.mainSections }}
+	{{ range (.Paginate $pages).Pages }}
+		{{ .Title }}
+	{{ end }}
+
+{{ end }}
