@@ -1,8 +1,39 @@
 {{ define "main" }}
 
 	{{ $pages := where site.RegularPages "Type" "in" site.Params.mainSections }}
-	{{ range (.Paginate $pages).Pages }}
-		{{ .Title }}
-	{{ end }}
+
+	<table id="labs">
+		<thead>
+			<tr>
+				<th></th>
+				<th></th>
+				<th colspan="3">135</th>
+				<th colspan="3">120</th>
+			</tr>
+			<tr>
+				<th>Name</th>
+				<th>Location</th>
+
+				<th>C-41</th>
+				<th>B&W</th>
+				<th>E-6</th>
+
+				<th>C-41</th>
+				<th>B&W</th>
+				<th>E-6</th>
+			</tr>
+		</thead>
+
+		<tbody>
+			{{ range site.RegularPages }}
+			<tr>
+				<td><a href="{{ .RelPermalink }}">{{ .Title }}</a></td>
+				<td>{{ .Params.city }}, {{ .Params.country }}</td>
+				<td>{{ .Params.f135c41 }}</td>
+				<td>{{ .Params.f135bw }}</td>
+			</tr>
+			{{ end }}
+		</tbody>
+	</table>
 
 {{ end }}

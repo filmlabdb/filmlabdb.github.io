@@ -1,4 +1,4 @@
-baseURL: "http://sams96.github.io/filmlabdb"
+baseURL: "http://filmlabdb.github.io/"
 languageCode: "en-gb"
-title: "FilmlabDB"
+title: "filmlabDB"
 theme: filmlabdb-theme
