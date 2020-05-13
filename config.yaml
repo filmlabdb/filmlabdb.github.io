@@ -1,4 +1,17 @@
-baseURL: "http://filmlabdb.github.io/"
+baseURL: "https://filmlabdb.github.io/"
 languageCode: "en-gb"
 title: "filmlabDB"
 theme: filmlabdb-theme
+
+menu:
+  main:
+    - identifier: about
+      name: About
+      title: About
+      url: /about/
+      weight: 0
+
+    - identifier: map
+      name: Map
+      url: /map/
+      weight: 1
