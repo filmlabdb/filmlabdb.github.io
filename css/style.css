@@ -1,0 +1,57 @@
+body {
+	max-width: 64em;
+	width: 100%;
+	margin: auto;
+
+	font-size: 16px;
+	font-weight: 400;
+}
+
+table {
+	width: 100%;
+	border-collapse: collapse;
+	table-layout: fixed;
+}
+
+tbody tr:nth-of-type(odd) {
+	background: #eee;
+}
+
+th {
+	font-weight: bold;
+	text-align: left;
+}
+
+td, th {
+	padding: 6px;
+}
+
+@media only screen and (max-width: 42em) {
+	table {
+		border: 0;
+	}
+
+	table thead {
+		border: none;
+		clip: rect(0 0 0 0);
+		height: 1px;
+		margin: -1px;
+		overflow: hidden;
+		padding: 0;
+		position: absolute;
+		width: 1px;
+	}
+
+	table tr {
+		display: block;
+		margin-bottom: .5em;
+	}
+
+	table td::before {
+		float: left;
+	}
+
+	td:not(:nth-child(1)) {
+		display: none;
+	}
+}
