@@ -2,6 +2,7 @@
 title: Palm Labs
 city: Birmingham
 country: UK
+loc: [52.473, -1.889]
 
 f135c41: true
 f135bw: true

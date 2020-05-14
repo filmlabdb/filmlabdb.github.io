@@ -7,6 +7,27 @@ body {
 	font-weight: 400;
 }
 
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.site-header {
+    white-space: nowrap;
+}
+
+header nav {
+    margin-top: 1em;
+    max-width: 100%;
+    text-align: right;
+    margin-bottom: 1em;
+}
+
+#mapid {
+	height: 42em;
+}
+
+/* Table */
 table {
 	width: 100%;
 	border-collapse: collapse;
@@ -15,11 +36,11 @@ table {
 
 tbody tr:nth-of-type(odd) {
 	background: #eee;
+	text-align: left;
 }
 
 th {
 	font-weight: bold;
-	text-align: left;
 }
 
 td, th {
