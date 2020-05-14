@@ -28,7 +28,11 @@
 			{{ range site.RegularPages }}
 			<tr>
 				<td><a href="{{ .RelPermalink }}">{{ .Title }}</a></td>
-				<td>{{ delimit (slice .Params.city .Params.subdivision .Params.country) ", " }}</td>
+				{{ $l:= slice }}
+				{{ with .Params.city}}{{ $l = $l | append . }}{{ end }}
+				{{ with .Params.subdivision}}{{ $l = $l | append . }}{{ end }}
+				{{ with .Params.country}}{{ $l = $l | append . }}{{ end }}
+				<td>{{ delimit $l ", " }}</td>
 
 				<td>{{ .Params.f135c41 }}</td>
 				<td>{{ .Params.f135bw }}</td>

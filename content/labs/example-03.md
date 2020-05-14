@@ -1,6 +1,7 @@
 ---
 title: Example 03
 city: Exampleville
+subdivision: Example State
 country: Exampleland
 
 f135c41: true
