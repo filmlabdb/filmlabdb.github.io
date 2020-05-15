@@ -3,9 +3,6 @@
         <header>
             <h1>{{ .Title }}</h1>
         </header>
-        <div class="content">
-            {{ .Content }}
-        </div>
 		<div id="mapid" data-loc="{{ .Params.loc | jsonify }}"></div>
     </article>
 {{ end }}

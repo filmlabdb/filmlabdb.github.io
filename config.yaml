@@ -3,6 +3,9 @@ languageCode: "en-gb"
 title: "filmlabDB"
 theme: filmlabdb-theme
 
+params:
+  mainSections: labs
+
 menu:
   main:
     - identifier: about

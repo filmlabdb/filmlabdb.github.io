@@ -2,3 +2,7 @@
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
 
 <link rel="stylesheet" type="text/css" href="{{ "css/style.css" | absURL }}">
+
+{{ if or (and (isset .Params "loc") (eq .Type "labs")) (eq .Layout "map") }}
+	<link rel="stylesheet" type="text/css" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"/>
+{{ end }}
