@@ -24,14 +24,14 @@ header nav {
 }
 
 #mapid {
-	height: 42em;
+	height: 50vh;
 }
 
 /* Table */
 table {
 	width: 100%;
 	border-collapse: collapse;
-	table-layout: fixed;
+	table-layout: auto;
 }
 
 tbody tr:nth-of-type(odd) {
@@ -47,7 +47,7 @@ td, th {
 	padding: 6px;
 }
 
-@media only screen and (max-width: 42em) {
+@media only screen and (max-width: 24em) {
 	table {
 		border: 0;
 	}
