@@ -50,7 +50,7 @@ td, th {
 	padding: 6px;
 }
 
-@media only screen and (max-width: 24em) {
+@media only screen and (max-width: 29em) {
 	table {
 		border: 0;
 	}
