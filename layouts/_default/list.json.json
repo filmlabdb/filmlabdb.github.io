@@ -1,0 +1,23 @@
+{{- $pages := where site.RegularPages "Type" "in" site.Params.mainSections }}
+{
+	"labs": [
+	{{- range $i, $p :=  $pages }}
+		{
+			"name": "<a href=\"{{ .RelPermalink }}\">{{ .Title }}</a>",
+			{{- if isset .Params "loc" }}
+			"loc": {{ .Params.loc | jsonify }},
+			{{- end }}
+			"135": {
+				"c41": {{ .Params.f135c41 }},
+				"b&w": {{ .Params.f135bw }},
+				"e6": {{ .Params.f135e6 }}
+			},
+			"120": {
+				"c41": {{ .Params.f120c41 }},
+				"b&w": {{ .Params.f120bw }},
+				"e6": {{ .Params.f120e6 }}
+			}
+		}{{ if ne (sub (len $pages) 1) $i }},{{ end }}
+	{{- end }}
+	]
+}

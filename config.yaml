@@ -17,3 +17,8 @@ menu:
       name: Map
       url: /map/
       weight: 1
+
+outputs:
+  home:
+    - html
+    - json

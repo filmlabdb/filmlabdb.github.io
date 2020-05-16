@@ -6,6 +6,10 @@
         <div class="content">
             {{ .Content }}
         </div>
-		<div id="mapid" data-loc="{{ .Params.loc | jsonify }}"></div>
+		<div id="mapid"
+			 data-loc="{{ .Params.loc | jsonify }}"
+			 data-name="<a href={{ .Permalink }}>{{ .Title }}</a>"
+			 data-type="single">
+		</div>
     </article>
 {{ end }}
