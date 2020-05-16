@@ -21,7 +21,18 @@ if (pageType == "single") {
 	L.marker(loc).addTo(mymap)
 		.bindPopup(map.dataset.name)
 } else if (pageType == "map") {
+	var markers = L.markerClusterGroup();
 	fetch("../index.json")
 		.then(response => response.json())
-		.then(json => json.labs.map(lab => L.marker(lab.loc).addTo(mymap)))
+		.then(json => json.labs.map(
+			function(lab) { 
+				if (lab.loc != null) {
+					var marker = L.marker(lab.loc);
+					marker.bindPopup(lab.name);
+					console.log(lab.name);
+					markers.addLayer(marker);
+				}
+			}));
+
+	mymap.addLayer(markers);
 }
