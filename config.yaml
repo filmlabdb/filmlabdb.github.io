@@ -22,3 +22,10 @@ outputs:
   home:
     - html
     - json
+
+googleAnalytics: UA-160189334-2
+privacy:
+  googleAnalytics:
+    anonymizeIP: true
+    respectDoNotTrack: true
+    useSessionStorage: true
