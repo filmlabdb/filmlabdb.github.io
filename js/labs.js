@@ -25,6 +25,13 @@ function reponsiveLabs(mq) {
 						}
 					}
 				}
+				if (row.cells[8].innerText == "true" && row.cells[9].innerText == "true") {
+					r.push("postal & walk-in");
+				} else if (row.cells[8].innerText == "true") {
+					r.push("postal only");
+				} else if (row.cells[9].innerText == "true") {
+					r.push("walk-in only");
+				}
 				row.innerHTML = r.join(' ');
 			});
 	} else {
@@ -32,6 +39,6 @@ function reponsiveLabs(mq) {
 	}
 }
 
-var mq = window.matchMedia("(max-width: 24em)");
+var mq = window.matchMedia("(max-width: 29em)");
 reponsiveLabs(mq);
 mq.addListener(reponsiveLabs);
